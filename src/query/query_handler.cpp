@@ -1,6 +1,7 @@
 #include "../../include/query_handler.h"
 #include "../../include/query_utils.h"
 #include <immintrin.h> // For SIMD instructions
+#include <iostream>
 
 // Constructor to initialize the dictionary, encoded data, and index map
 QueryHandler::QueryHandler(const std::unordered_map<std::string, int>& dictionary, const std::vector<int>& encoded_data)
@@ -20,6 +21,12 @@ std::vector<size_t> QueryHandler::exactMatchQuery(const std::string& data_item) 
         int encoded_value = it->second;
         if (data_index_.count(encoded_value)) {
             result = data_index_.at(encoded_value); // Get all indices of the exact match
+
+            // Print the corresponding words for the found indices
+            std::cout << "Exact Match Query for item \"" << data_item << "\":\n";
+            for (size_t idx : result) {
+                std::cout << "Index: " << idx << " -> Word: " << data_item << std::endl;
+            }
         }
     }
     return result;
@@ -34,6 +41,12 @@ std::vector<size_t> QueryHandler::prefixMatchQuery(const std::string& prefix) co
             if (data_index_.count(encoded_value)) {
                 const auto& indices = data_index_.at(encoded_value);
                 result.insert(result.end(), indices.begin(), indices.end());
+
+                // Print the corresponding words for the found indices
+                std::cout << "Prefix Match Query for prefix \"" << prefix << "\":\n";
+                for (size_t idx : indices) {
+                    std::cout << "Index: " << idx << " -> Word: " << data_item << std::endl;
+                }
             }
         }
     }

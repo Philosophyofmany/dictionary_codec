@@ -25,4 +25,4 @@ bool startsWithSIMD(const std::string& str, const std::string& prefix) {
     return true;
 }
 
-} // namespace QueryUtils
+}

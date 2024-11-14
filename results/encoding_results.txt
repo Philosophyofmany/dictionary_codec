@@ -1,90 +1,142 @@
-Dictionary:
-dylg -> 88
-cddpzwtl -> 86
-tjyftl -> 85
-nrknwmq -> 82
-jbqk -> 81
-nupm -> 80
-wrecmyno -> 79
-ntgpbg -> 78
-unlnmzk -> 77
-lnckvro -> 75
-zvbiazqy -> 73
-mngt -> 72
-bsolpcebs -> 69
-zkhaaokyfz -> 71
-mdiypjs -> 68
-dlbjpbw -> 70
-qoydaj -> 67
-byasa -> 63
-nsmgpo -> 62
-fabzighnd -> 61
-wqjuumi -> 59
-ozrr -> 28
-mpkpcp -> 50
-ulzkt -> 26
-wociz -> 7
-klfjjzs -> 23
-zcuwdbois -> 14
-ncdqerklav -> 21
-ziypqwir -> 19
-ojyyalhrlt -> 10
-vhnobndgy -> 25
-ooihnzhuzu -> 17
-dsfebdht -> 27
-mggcuofoem -> 11
-mikvozuhba -> 0
-pikgyaqet -> 52
-hqeshhl -> 15
-etmjgorucv -> 13
-ibzswa -> 34
-rzjtuj -> 55
-mbwgkylpys -> 40
-jywasclne -> 1
-hngvv -> 20
-kucsd -> 3
-gtkhqcn -> 60
-synkfiaoyj -> 12
-ormwjjwjic -> 58
-eslhquyj -> 2
-odrghmkp -> 30
-dnjwk -> 43
-ubbuyekaz -> 64
-qoiiyhagob -> 48
-sqfez -> 38
-feaijzhdii -> 18
-yvlr -> 8
-czumuumjk -> 24
-kszvdc -> 56
-lrqb -> 22
-anszt -> 84
-piccrbv -> 16
-mlyaz -> 4
-rebcpmct -> 5
-miorceg -> 87
-iuemp -> 9
-fnmz -> 42
-qqrd -> 31
-dpqydd -> 33
-baqirpsqn -> 32
-wgmgcskoul -> 66
-fqycovpn -> 46
-meglblecqc -> 83
-nbrgym -> 74
-bojt -> 57
-gbymf -> 35
-kzqv -> 41
-fcrhmu -> 6
-qfmct -> 36
-cdhpsub -> 37
-jzhswys -> 39
-lvjitrykwj -> 44
-entevftj -> 76
-phsdou -> 47
-wzmbpd -> 45
-oedtz -> 54
-cide -> 29
-niraevvwu -> 49
-thsgtyw -> 51
-cealovadom -> 65
-pazayouzlg -> 53
+Dictionary (with counts):
+tjyftl -> 134 (Count: 1)
+urnbfyjsr -> 133 (Count: 1)
+vmvnelrvyc -> 131 (Count: 1)
+ntgpbg -> 129 (Count: 1)
+wrjaq -> 127 (Count: 1)
+lhyn -> 135 (Count: 1)
+dpqydd -> 54 (Count: 1)
+dwsbcr -> 118 (Count: 1)
+cide -> 48 (Count: 1)
+niraevvwu -> 19 (Count: 1)
+vhnobndgy -> 44 (Count: 1)
+rebcpmct -> 41 (Count: 1)
+mlyaz -> 40 (Count: 1)
+anszt -> 113 (Count: 1)
+miorceg -> 108 (Count: 1)
+ooblfk -> 91 (Count: 1)
+wociz -> 33 (Count: 1)
+lvjitrykwj -> 32 (Count: 1)
+siqcuzh -> 72 (Count: 1)
+omfjyet -> 99 (Count: 1)
+feaijzhdii -> 42 (Count: 1)
+yvlr -> 10 (Count: 1)
+sqfez -> 50 (Count: 1)
+wzmbpd -> 31 (Count: 1)
+oedtz -> 25 (Count: 1)
+ojyyalhrlt -> 30 (Count: 1)
+ziypqwir -> 29 (Count: 1)
+synkfiaoyj -> 47 (Count: 1)
+gtkhqcn -> 8 (Count: 1)
+kucsd -> 46 (Count: 1)
+jywasclne -> 45 (Count: 1)
+mbwgkylpys -> 65 (Count: 1)
+lhlnbozy -> 130 (Count: 1)
+wgmgcskoul -> 128 (Count: 1)
+qqrd -> 53 (Count: 1)
+ormwjjwjic -> 9 (Count: 1)
+kszvdc -> 11 (Count: 1)
+vpmd -> 106 (Count: 1)
+fabzighnd -> 7 (Count: 1)
+hqeshhl -> 2 (Count: 1)
+nsmgpo -> 6 (Count: 1)
+eliifvi -> 95 (Count: 1)
+byasa -> 5 (Count: 1)
+ubbuyekaz -> 4 (Count: 1)
+qoiiyhagob -> 24 (Count: 1)
+pazayouzlg -> 16 (Count: 1)
+lnckvro -> 49 (Count: 1)
+yfqpnojffc -> 105 (Count: 1)
+unlnmzk -> 114 (Count: 1)
+jzhswys -> 51 (Count: 1)
+plbfroc -> 120 (Count: 1)
+ncdqerklav -> 1 (Count: 1)
+fcrhmu -> 43 (Count: 1)
+todvmze -> 88 (Count: 1)
+pikgyaqet -> 13 (Count: 1)
+olarvgnfwv -> 94 (Count: 1)
+thsgtyw -> 17 (Count: 1)
+ahjsnjrr -> 69 (Count: 1)
+cdhpsub -> 56 (Count: 1)
+ozrr -> 35 (Count: 1)
+mpkpcp -> 18 (Count: 1)
+dkjbgvqjkg -> 70 (Count: 1)
+bsolpcebs -> 136 (Count: 1)
+sqqsud -> 100 (Count: 1)
+odbeyulzt -> 71 (Count: 1)
+wmbf -> 87 (Count: 1)
+qfmct -> 57 (Count: 1)
+utiud -> 78 (Count: 1)
+wqjuumi -> 20 (Count: 1)
+mikvozuhba -> 39 (Count: 1)
+rzjtuj -> 21 (Count: 1)
+dnjwk -> 58 (Count: 1)
+etmjgorucv -> 22 (Count: 1)
+phsdou -> 26 (Count: 1)
+entevftj -> 117 (Count: 1)
+baqirpsqn -> 55 (Count: 1)
+piccrbv -> 12 (Count: 1)
+ibzswa -> 52 (Count: 1)
+bojt -> 27 (Count: 1)
+meglblecqc -> 119 (Count: 1)
+nbrgym -> 124 (Count: 1)
+eslhquyj -> 59 (Count: 1)
+rjppelvsw -> 74 (Count: 1)
+gbymf -> 62 (Count: 1)
+fqycovpn -> 28 (Count: 1)
+kzqv -> 63 (Count: 1)
+fjtipcod -> 76 (Count: 1)
+czumuumjk -> 66 (Count: 1)
+klfjjzs -> 67 (Count: 1)
+fnmz -> 61 (Count: 1)
+mdizbg -> 126 (Count: 1)
+sfya -> 68 (Count: 1)
+tkuc -> 73 (Count: 1)
+dsfebdht -> 64 (Count: 1)
+aluzqe -> 75 (Count: 1)
+ceah -> 77 (Count: 1)
+aeedha -> 79 (Count: 1)
+otetvzaau -> 80 (Count: 1)
+hngvv -> 0 (Count: 1)
+hbfzwu -> 81 (Count: 1)
+urgr -> 137 (Count: 1)
+iuksud -> 82 (Count: 1)
+lrqb -> 36 (Count: 1)
+rkccrummwu -> 103 (Count: 1)
+mggcuofoem -> 15 (Count: 1)
+zcuwdbois -> 23 (Count: 1)
+odrghmkp -> 60 (Count: 1)
+ygwpdmjhzc -> 83 (Count: 1)
+eihvvoqmhh -> 84 (Count: 1)
+dsfi -> 104 (Count: 1)
+nrknwmq -> 121 (Count: 1)
+vble -> 85 (Count: 1)
+ooihnzhuzu -> 14 (Count: 1)
+mvone -> 86 (Count: 1)
+iskqnrea -> 89 (Count: 1)
+bunh -> 102 (Count: 1)
+msaqbghbcj -> 92 (Count: 1)
+rhzzzqkgft -> 93 (Count: 1)
+ythrbkel -> 97 (Count: 1)
+rwjhl -> 96 (Count: 1)
+syfdfonzo -> 98 (Count: 1)
+zwbntycyw -> 101 (Count: 1)
+dylg -> 107 (Count: 1)
+wrecmyno -> 34 (Count: 1)
+mngt -> 109 (Count: 1)
+iuemp -> 37 (Count: 1)
+ulzkt -> 38 (Count: 1)
+zvbiazqy -> 110 (Count: 1)
+tgfapghrq -> 90 (Count: 1)
+mzsirlq -> 111 (Count: 1)
+cealovadom -> 3 (Count: 1)
+cddpzwtl -> 112 (Count: 1)
+dlbjpbw -> 132 (Count: 1)
+nupm -> 115 (Count: 2)
+jbqk -> 116 (Count: 1)
+zkhaaokyfz -> 122 (Count: 1)
+mdiypjs -> 123 (Count: 1)
+qoydaj -> 125 (Count: 1)
+
+Duplicate Entries:
+Encoded Value: 115 -> Indices: 73 100 

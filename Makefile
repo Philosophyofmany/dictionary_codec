@@ -13,13 +13,15 @@ SRC_FILES = $(SRC_DIR)/main.cpp \
             $(SRC_DIR)/encoding/dictionary_encoder.cpp \
             $(SRC_DIR)/encoding/multi_threading.cpp \
             $(SRC_DIR)/query/query_handler.cpp \
-            $(SRC_DIR)/query/query_utils.cpp  # Added query_utils.cpp
+            $(SRC_DIR)/query/query_utils.cpp \
+            $(SRC_DIR)/query/vanilla_search.cpp  # Added vanilla_search.cpp
 
 OBJ_FILES = $(OBJ_DIR)/main.o \
             $(OBJ_DIR)/dictionary_encoder.o \
             $(OBJ_DIR)/multi_threading.o \
             $(OBJ_DIR)/query_handler.o \
-            $(OBJ_DIR)/query_utils.o  # Added query_utils.o
+            $(OBJ_DIR)/query_utils.o \
+            $(OBJ_DIR)/vanilla_search.o  # Added vanilla_search.o
 
 # Targets
 all: $(BIN_DIR)/dictionary_encoder
@@ -37,7 +39,10 @@ $(OBJ_DIR)/multi_threading.o: $(SRC_DIR)/encoding/multi_threading.cpp
 $(OBJ_DIR)/query_handler.o: $(SRC_DIR)/query/query_handler.cpp
 	$(CXX) $(CXXFLAGS) -I$(INCLUDE_DIR) -c $< -o $@
 
-$(OBJ_DIR)/query_utils.o: $(SRC_DIR)/query/query_utils.cpp  # Added compilation for query_utils.cpp
+$(OBJ_DIR)/query_utils.o: $(SRC_DIR)/query/query_utils.cpp
+	$(CXX) $(CXXFLAGS) -I$(INCLUDE_DIR) -c $< -o $@
+
+$(OBJ_DIR)/vanilla_search.o: $(SRC_DIR)/query/vanilla_search.cpp  # Added compilation for vanilla_search.cpp
 	$(CXX) $(CXXFLAGS) -I$(INCLUDE_DIR) -c $< -o $@
 
 # Link object files into executable
