@@ -5,8 +5,13 @@
 #include <vector>
 
 namespace QueryUtils {
-    // Checks if str starts with the given prefix using SIMD
-    bool startsWithSIMD(const std::string& str, const std::string& prefix);
-}
+
+// Function to check if a string starts with the given prefix using SIMD (AVX2)
+bool startsWithSIMD(const std::string& str, const std::string& prefix);
+
+// Exact Match Search using SIMD (AVX2)
+bool exactMatchSIMD(const std::string& str, const std::string& target);
+
+} // namespace QueryUtils
 
 #endif // QUERY_UTILS_H

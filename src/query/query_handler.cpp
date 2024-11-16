@@ -13,21 +13,24 @@ QueryHandler::QueryHandler(const std::unordered_map<std::string, int>& dictionar
     }
 }
 
-// Exact match query with timing
+// Exact match query with SIMD optimization and timing
 std::vector<size_t> QueryHandler::exactMatchQuery(const std::string& data_item) const {
     auto start = std::chrono::high_resolution_clock::now(); // Start timing
 
     std::vector<size_t> result;
     auto it = dictionary_.find(data_item);
     if (it != dictionary_.end()) {
-        int encoded_value = it->second;
-        if (data_index_.count(encoded_value)) {
-            result = data_index_.at(encoded_value); // Get all indices of the exact match
+        // Use exactMatchSIMD to check for an exact match
+        if (QueryUtils::exactMatchSIMD(data_item, data_item)) {
+            int encoded_value = it->second;
+            if (data_index_.count(encoded_value)) {
+                result = data_index_.at(encoded_value); // Get all indices of the exact match
 
-            // Print the corresponding words for the found indices
-            std::cout << "Exact Match Query for item \"" << data_item << "\":\n";
-            for (size_t idx : result) {
-                std::cout << "Index: " << idx << " -> Word: " << data_item << std::endl;
+                // Print the corresponding words for the found indices
+                std::cout << "Exact Match Query for item \"" << data_item << "\":\n";
+                for (size_t idx : result) {
+                    std::cout << "Index: " << idx << " -> Word: " << data_item << std::endl;
+                }
             }
         }
     }
