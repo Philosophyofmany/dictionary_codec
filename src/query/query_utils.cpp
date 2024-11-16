@@ -1,12 +1,18 @@
 #include "../../include/query_utils.h"
 #include <immintrin.h> // For SIMD instructions on x86 (AVX2)
+#include <string>
 
 namespace QueryUtils {
 
 // Checks if a string starts with the given prefix using AVX2 instructions
 bool startsWithSIMD(const std::string& str, const std::string& prefix) {
     size_t prefix_len = prefix.length();
-    if (str.length() < prefix_len) return false;
+    if (str.length() < prefix_len) return false;  // Early exit if the string is shorter than the prefix
+
+    // Handle small prefixes with regular comparison (for efficiency)
+    if (prefix_len < 8) {
+        return str.compare(0, prefix_len, prefix) == 0;
+    }
 
     size_t i = 0;
 
@@ -19,9 +25,9 @@ bool startsWithSIMD(const std::string& str, const std::string& prefix) {
         // Compare 32 characters (256 bits) at once
         __m256i cmp_result = _mm256_cmpeq_epi8(str_chunk, prefix_chunk);
 
-        // Check if all characters match
+        // If any byte in the chunk doesn't match, return false
         if (_mm256_testc_si256(cmp_result, cmp_result) == 0) {
-            return false; // If any mismatch, return false
+            return false;
         }
     }
 

@@ -104,12 +104,25 @@ int main() {
     // Create QueryHandler with encoded data and dictionary
     QueryHandler query_handler(dictionary, encoded_data);
 
+    // Ask user for the query type (SIMD or no SIMD)
+    char search_type;
+    std::cout << "Do you want to search with SIMD optimization? (y/n): ";
+    std::cin >> search_type;
+
     // Exact match query in encoded data
     std::string exact_item;
     std::cout << "Enter the item for an exact match query in the encoded data: ";
     std::cin >> exact_item;
 
-    std::vector<size_t> exact_match_indices = query_handler.exactMatchQuery(exact_item);
+    std::vector<size_t> exact_match_indices;
+
+    if (search_type == 'y' || search_type == 'Y') {
+        // SIMD-based exact match query
+        exact_match_indices = query_handler.exactMatchQuery(exact_item);
+    } else {
+        // Non-SIMD exact match query
+        exact_match_indices = query_handler.exactMatchQueryNoSIMD(exact_item);
+    }
 
     if (!exact_match_indices.empty()) {
         std::cout << "Item found at indices: ";
@@ -126,7 +139,15 @@ int main() {
     std::cout << "Enter the prefix for a prefix match query in the encoded data: ";
     std::cin >> prefix;
 
-    std::vector<size_t> prefix_match_indices = query_handler.prefixMatchQuery(prefix);
+    std::vector<size_t> prefix_match_indices;
+
+    if (search_type == 'y' || search_type == 'Y') {
+        // SIMD-based prefix match query
+        prefix_match_indices = query_handler.prefixMatchQuery(prefix);
+    } else {
+        // Non-SIMD prefix match query
+        prefix_match_indices = query_handler.prefixMatchQueryNoSIMD(prefix);
+    }
 
     if (!prefix_match_indices.empty()) {
         std::cout << "Matching items at indices: ";
