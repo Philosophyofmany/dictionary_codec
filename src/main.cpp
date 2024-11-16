@@ -12,7 +12,6 @@ int main() {
     std::string input_file = "data/Column.txt";  // Raw data file path
     std::string encoded_output_file = "data/encoded_column.txt";  // Encoded output data path
     std::string encoding_results_file = "results/encoding_results.txt";  // Dictionary encoding result path
-    int num_threads = 4;  // Number of threads to use for multi-threading
 
     // Load raw data for vanilla search
     std::vector<std::string> data_column;
@@ -67,23 +66,17 @@ int main() {
         }
     }
 
+    // Ask the user to specify the number of threads for dictionary encoding
+    int num_threads;
+    std::cout << "Enter the number of threads to use for dictionary encoding: ";
+    std::cin >> num_threads;
+
     // Proceed with dictionary encoding
-    std::cout << "Starting dictionary encoding...\n";
+    std::cout << "Starting dictionary encoding with " << num_threads << " threads...\n";
 
     std::unordered_map<std::string, int> dictionary;
     std::vector<int> encoded_data;
     dictionary_encode(input_file, encoded_output_file, encoding_results_file, num_threads, dictionary, encoded_data);
-
-    std::cout << "Dictionary after encoding:\n";
-    for (const auto& entry : dictionary) {
-        std::cout << entry.first << " -> " << entry.second << "\n";
-    }
-
-    std::cout << "Encoded data (IDs): ";
-    for (const int encoded_value : encoded_data) {
-        std::cout << encoded_value << " ";
-    }
-    std::cout << "\n";
 
     // Create QueryHandler with encoded data and dictionary
     QueryHandler query_handler(dictionary, encoded_data);
