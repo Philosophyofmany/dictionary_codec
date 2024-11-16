@@ -5,17 +5,35 @@
 #include <fstream>
 #include "../include/dictionary_encoder.h"
 #include "../include/query_handler.h"
-#include "../include/vanilla_search.h"  // Include VanillaSearch header
+#include "../include/vanilla_search.h"
+#include "../include/performance_test.h"
+
 
 int main() {
     // Define paths for input, output, and result files
     std::string input_file = "data/Column.txt";  // Raw data file path
     std::string encoded_output_file = "data/encoded_column.txt";  // Encoded output data path
     std::string encoding_results_file = "results/encoding_results.txt";  // Dictionary encoding result path
+    std::string performance_results_file = "results/performance_results.txt";  // Performance results file path
+
+    // Ask the user if they want to run the performance test
+    char performance_choice;
+    std::cout << "Do you want to run the performance test? (y/n): ";
+    std::cin >> performance_choice;
+
+    if (performance_choice == 'y' || performance_choice == 'Y') {
+        std::cout << "Running performance test...\n";
+        test_performance(input_file, performance_results_file);
+    }
 
     // Load raw data for vanilla search
     std::vector<std::string> data_column;
     std::ifstream infile(input_file);
+    if (!infile.is_open()) {
+        std::cerr << "Error opening input file: " << input_file << "\n";
+        return 1;
+    }
+
     std::string line;
     while (std::getline(infile, line)) {
         data_column.push_back(line);
@@ -70,6 +88,11 @@ int main() {
     int num_threads;
     std::cout << "Enter the number of threads to use for dictionary encoding: ";
     std::cin >> num_threads;
+
+    if (num_threads <= 0) {
+        std::cerr << "Number of threads must be positive.\n";
+        return 1;
+    }
 
     // Proceed with dictionary encoding
     std::cout << "Starting dictionary encoding with " << num_threads << " threads...\n";

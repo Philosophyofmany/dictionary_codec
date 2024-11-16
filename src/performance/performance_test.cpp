@@ -4,6 +4,7 @@
 #include <unordered_map>
 #include <vector>
 #include "../../include/dictionary_encoder.h"
+#include "../../include/performance_test.h"
 
 void test_performance(const std::string& input_file, const std::string& output_file) {
     std::ofstream performance_file(output_file);
@@ -39,13 +40,4 @@ void test_performance(const std::string& input_file, const std::string& output_f
 
     performance_file.close();
     std::cout << "Performance results saved to " << output_file << std::endl;
-}
-
-int main() {
-    std::string input_file = "data/Column.txt"; // Input data file
-    std::string output_file = "results/performance_comparison.txt"; // Performance results file
-
-    test_performance(input_file, output_file);
-
-    return 0;
 }
