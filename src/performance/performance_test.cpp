@@ -20,7 +20,7 @@ void test_performance(const std::string& input_file, const std::string& output_f
     performance_file << "Threads  | Time (ms)\n";
     performance_file << "------------------------\n"; // separator
 
-    std::vector<int> thread_numbers = {1, 2, 4, 8, 16}; // Number of threads to test
+    std::vector<int> thread_numbers = {1, 2, 4, 8, 16, 20}; // Number of threads to test
     std::unordered_map<std::string, int> dictionary;
     std::vector<int> encoded_data;
 
