@@ -5,7 +5,7 @@
 
 // Constructor to initialize the dictionary, encoded data, and index map
 QueryHandler::QueryHandler(const std::unordered_map<std::string, int>& dictionary, const std::vector<int>& encoded_data)
-    : dictionary_(dictionary), encoded_data_(encoded_data) {
+    : dictionary_(dictionary), encoded_data_(encoded_data), last_query_duration_(0) {
     // Build an index map for quick lookup of data item positions
     for (size_t i = 0; i < encoded_data.size(); ++i) {
         data_index_[encoded_data[i]].push_back(i);
@@ -36,8 +36,9 @@ std::vector<size_t> QueryHandler::exactMatchQuery(const std::string& data_item) 
 
     auto end = std::chrono::high_resolution_clock::now(); // End timing
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-    std::cout << "Exact Match Query took " << duration << " µs.\n";
+    last_query_duration_ = duration; // Store the duration of the last query
 
+    std::cout << "Exact Match Query took " << duration << " µs.\n";
     return result;
 }
 
@@ -63,8 +64,9 @@ std::vector<size_t> QueryHandler::prefixMatchQuery(const std::string& prefix) co
 
     auto end = std::chrono::high_resolution_clock::now(); // End timing
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-    std::cout << "Prefix Match Query took " << duration << " µs.\n";
+    last_query_duration_ = duration; // Store the duration of the last query
 
+    std::cout << "Prefix Match Query took " << duration << " µs.\n";
     return result;
 }
 
@@ -90,8 +92,10 @@ std::vector<size_t> QueryHandler::exactMatchQueryNoSIMD(const std::string& data_
 
     auto end = std::chrono::high_resolution_clock::now(); // End timing
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-    std::cout << "Exact Match Query (No SIMD) took " << duration << " µs.\n";
+    last_query_duration_ = duration; // Store the duration of the last query
 
+    std::cout << "Exact Match Query (No SIMD) took " << duration << " µs.\n";
+    std::cout << "Last query duration (stored): " << last_query_duration_ << "µs.\n";
     return result;
 }
 
@@ -118,7 +122,8 @@ std::vector<size_t> QueryHandler::prefixMatchQueryNoSIMD(const std::string& pref
 
     auto end = std::chrono::high_resolution_clock::now(); // End timing
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-    std::cout << "Prefix Match Query (No SIMD) took " << duration << " µs.\n";
+    last_query_duration_ = duration; // Store the duration of the last query
 
+    std::cout << "Prefix Match Query (No SIMD) took " << duration << " µs.\n";
     return result;
 }

@@ -16,15 +16,18 @@ int main() {
     std::string encoding_results_file = "results/encoding_results.txt";  // Dictionary encoding result path
     std::string performance_results_file = "results/performance_results.txt";  // Performance results file path
 
-    // Ask the user if they want to run the performance test
+    // Ask the user if they want to run a couple of tests
+
     char performance_choice;
     std::cout << "Do you want to run the performance test? (y/n): ";
     std::cin >> performance_choice;
 
     if (performance_choice == 'y' || performance_choice == 'Y') {
         std::cout << "Running performance test...\n";
+
         test_performance(input_file, performance_results_file);
     }
+
 
     // Load raw data for vanilla search
     std::vector<std::string> data_column;
