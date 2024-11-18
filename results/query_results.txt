@@ -1,39 +1,39 @@
 Query Tests Results
 Query Type | Query Term | Indices | Time (µs)
 --------------------------------------------
-Exact Match | uyadc | 357  | Time: 5 µs
-Exact Match | ikjsyqehs | 818  | Time: 3 µs
-Exact Match | yafcyuc | 958  | Time: 5 µs
-Exact Match | odbeyulzt | 135  | Time: 3 µs
-Exact Match | wzmbpd | 18  | Time: 3 µs
-Exact Match | edwdyswjf | 945  | Time: 3 µs
-Exact Match | vbtjs | 554  | Time: 3 µs
-Exact Match | mzsirlq | 93  | Time: 5 µs
-Exact Match | qwlarkmbw | 967  | Time: 3 µs
-Exact Match No SIMD | uyadc | 357  | Time: 3 µs
-Exact Match No SIMD | ikjsyqehs | 818  | Time: 4 µs
-Exact Match No SIMD | yafcyuc | 958  | Time: 4 µs
-Exact Match No SIMD | odbeyulzt | 135  | Time: 3 µs
-Exact Match No SIMD | wzmbpd | 18  | Time: 3 µs
-Exact Match No SIMD | edwdyswjf | 945  | Time: 3 µs
-Exact Match No SIMD | vbtjs | 554  | Time: 3 µs
-Exact Match No SIMD | mzsirlq | 93  | Time: 3 µs
-Exact Match No SIMD | qwlarkmbw | 967  | Time: 3 µs
-Prefix Match | uya | 357  | Time: 28 µs
-Prefix Match | ikj | 818  | Time: 27 µs
-Prefix Match | yaf | 958  | Time: 26 µs
-Prefix Match | odb | 135  | Time: 27 µs
-Prefix Match | wzm | 18  | Time: 26 µs
-Prefix Match | edw | 945  | Time: 28 µs
-Prefix Match | vbt | 554  | Time: 25 µs
-Prefix Match | mzs | 93  | Time: 26 µs
-Prefix Match | qwl | 967  | Time: 25 µs
-Prefix Match No SIMD | uya | 357  | Time: 23 µs
-Prefix Match No SIMD | ikj | 818  | Time: 24 µs
-Prefix Match No SIMD | yaf | 958  | Time: 22 µs
-Prefix Match No SIMD | odb | 135  | Time: 24 µs
-Prefix Match No SIMD | wzm | 18  | Time: 22 µs
-Prefix Match No SIMD | edw | 945  | Time: 25 µs
-Prefix Match No SIMD | vbt | 554  | Time: 22 µs
-Prefix Match No SIMD | mzs | 93  | Time: 22 µs
-Prefix Match No SIMD | qwl | 967  | Time: 22 µs
+Exact Match | uyadc | 357  | Time: 11 µs
+Exact Match | ikjsyqehs | 818  | Time: 8 µs
+Exact Match | yafcyuc | 958  | Time: 8 µs
+Exact Match | odbeyulzt | 135  | Time: 8 µs
+Exact Match | wzmbpd | 18  | Time: 7 µs
+Exact Match | edwdyswjf | 945  | Time: 7 µs
+Exact Match | vbtjs | 554  | Time: 11 µs
+Exact Match | mzsirlq | 93  | Time: 9 µs
+Exact Match | qwlarkmbw | 967  | Time: 7 µs
+Exact Match No SIMD | uyadc | 357  | Time: 8 µs
+Exact Match No SIMD | ikjsyqehs | 818  | Time: 7 µs
+Exact Match No SIMD | yafcyuc | 958  | Time: 7 µs
+Exact Match No SIMD | odbeyulzt | 135  | Time: 7 µs
+Exact Match No SIMD | wzmbpd | 18  | Time: 15 µs
+Exact Match No SIMD | edwdyswjf | 945  | Time: 7 µs
+Exact Match No SIMD | vbtjs | 554  | Time: 9 µs
+Exact Match No SIMD | mzsirlq | 93  | Time: 9 µs
+Exact Match No SIMD | qwlarkmbw | 967  | Time: 12 µs
+Prefix Match | uya | 357  | Time: 55 µs
+Prefix Match | ikj | 818  | Time: 55 µs
+Prefix Match | yaf | 958  | Time: 53 µs
+Prefix Match | odb | 135  | Time: 55 µs
+Prefix Match | wzm | 18  | Time: 52 µs
+Prefix Match | edw | 945  | Time: 57 µs
+Prefix Match | vbt | 554  | Time: 64 µs
+Prefix Match | mzs | 93  | Time: 52 µs
+Prefix Match | qwl | 967  | Time: 53 µs
+Prefix Match No SIMD | uya | 357  | Time: 81 µs
+Prefix Match No SIMD | ikj | 818  | Time: 63 µs
+Prefix Match No SIMD | yaf | 958  | Time: 50 µs
+Prefix Match No SIMD | odb | 135  | Time: 48 µs
+Prefix Match No SIMD | wzm | 18  | Time: 44 µs
+Prefix Match No SIMD | edw | 945  | Time: 49 µs
+Prefix Match No SIMD | vbt | 554  | Time: 44 µs
+Prefix Match No SIMD | mzs | 93  | Time: 44 µs
+Prefix Match No SIMD | qwl | 967  | Time: 44 µs
