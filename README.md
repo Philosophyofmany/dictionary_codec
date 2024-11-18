@@ -42,6 +42,7 @@ Upon execution, you will be prompted with a series of options:
 2. **Vanilla Search**: If you decline the performance test, you will be prompted to use a basic search feature, called "vanilla search", which doesn't use any encoding or performance optimizations. You can enter:
    - **Prefix search**
    - **Exact match search**
+  
    This is a non-optimized query method.
 
 3. **Dictionary Encoding**: After the test, the program will ask how many threads to use for encoding the dictionary. The dictionary will be encoded based on the specified number of threads. The terminal will then provide the location of the encoded files if you'd like to view them.
